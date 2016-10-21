@@ -58,7 +58,7 @@ public class EmailSender {
       /** Send MAIL FROM command.
        * This specifies the email address of the sender
        */
-      String mailfromcommand = "MAIL FROM: <kdrum18@cornellcollege.edu>\r\n";
+      String mailfromcommand = "MAIL FROM: <Email@email.com>\r\n";
       System.out.print(mailfromcommand);
       os.write(mailfromcommand.getBytes("US-ASCII"));
       response = br.readLine();
@@ -71,7 +71,7 @@ public class EmailSender {
       /** Send RCPT TO command.
        * This specifies the email address to send the mail to.
        */
-      String rcptcommand = "RCPT TO: <kdrum18@cornellcollege.edu>\r\n";
+      String rcptcommand = "RCPT TO: <Email@email.com>\r\n";
       System.out.print(rcptcommand);
       os.write(rcptcommand.getBytes("US-ASCII"));
       response = br.readLine();
@@ -97,11 +97,11 @@ public class EmailSender {
       /** Send message data.
        * Includes to, from, and subject lines.
        */
-       String msgLine1 = "to: <kdrum18@cornellcollege.edu>\r\n";
+       String msgLine1 = "to: <Email@email.com>\r\n";
     System.out.print(msgLine1);
     os.write(msgLine1.getBytes("US-ASCII"));
     
-        String msgLine2 = "from: <kdrum18@cornellcollege.edu>\r\n";
+        String msgLine2 = "from: <Email@email.com>\r\n";
     System.out.print(msgLine2);
     os.write(msgLine2.getBytes("US-ASCII"));
     
